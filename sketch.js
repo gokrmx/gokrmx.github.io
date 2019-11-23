@@ -41,7 +41,7 @@ function escena(x, y) {
 function luna(x, y) {
   push();
   translate(x - 60, y - 90);
-  fill(240);
+  fill(250);
   beginShape();
   for (var i = 0; i < 360; i += 2) {
     var r = 95;
