@@ -1,11 +1,17 @@
 var zoff = 0;
 let linku, linko;
 let letrero;
+let img;
+
+function preload(){
+ img = loadImage('gok.png'); 
+}
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(600, 600);
+    rectMode(CENTER);
+imageMode(CENTER);
   strokeWeight(0.5);
-
   linku = createA('https://broozli.tumblr.com','Moodboard');
   linko = createA('https://www.instagram.com/gokrmx/','Contacto');
 
@@ -15,27 +21,27 @@ function draw() {
   background(255);
   stroke(0);
   fill(220);
+  image(img,width/2,80);
   scale(1.2);
   this.escena(width / 100*43, height / 100 * 60);
 }
 
 
 function escena(x, y) {
-  rectMode(CENTER);
   this.luna(x, y);
   this.nubes(x, y);
   this.edificio(x, y);
   this.linkers(x, y);
-  
 }
+
 function linkers(x, y){
   push();
   translate(x, y);
-  linku.position(159, 290);
+  linku.position(211, 416);
   //linku.position(x-56, y+50);
   linku.mouseOver(overL);
   linku.mouseOut(outL);
-  linko.position(290, 290);
+  linko.position(342, 416);
   //linko.position(x+80, y+50);
   pop();
 }
