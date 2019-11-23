@@ -4,15 +4,10 @@ let letrero;
 
 function setup() {
   createCanvas(500, 400);
-  rectMode(CENTER);
   strokeWeight(0.5);
 
   linku = createA('https://broozli.tumblr.com','Moodboard');
-  linku.position(160, 290);
-  linku.mouseOver(overL);
-  linku.mouseOut(outL);
   linko = createA('https://www.instagram.com/gokrmx/','Contacto');
-  linko.position(290, 290);
 
 }
 
@@ -24,19 +19,33 @@ function draw() {
   this.escena(width / 100*43, height / 100 * 60);
 }
 
+
+function escena(x, y) {
+  rectMode(CENTER);
+  this.luna(x, y);
+  this.nubes(x, y);
+  this.edificio(x, y);
+  this.linkers(x, y);
+  
+}
+function linkers(x, y){
+  push();
+  translate(x, y);
+  linku.position(159, 290);
+  //linku.position(x-56, y+50);
+  linku.mouseOver(overL);
+  linku.mouseOut(outL);
+  linko.position(290, 290);
+  //linko.position(x+80, y+50);
+  pop();
+}
+
 function overL(){
 linku.html('Reblogs');  
 }
 function outL(){
  linku.html('Moodboard'); 
 }
-
-function escena(x, y) {
-  this.luna(x, y);
-  this.nubes(x, y);
-  this.edificio(x, y);
-}
-
 
 function luna(x, y) {
   push();
@@ -177,6 +186,6 @@ function basurero(x, y) {
   pop();
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, 400);
-}
+//function windowResized() {
+//  resizeCanvas(windowWidth, 400);
+//}
