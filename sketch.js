@@ -20,7 +20,7 @@ imageMode(CENTER);
 function draw() {
   background(255);
   stroke(0);
-  fill(220);
+  fill(255);
   image(img,width/2,80);
   scale(1.2);
   this.escena(width / 100*43, height / 100 * 60);
@@ -160,7 +160,6 @@ function poste(x, y) {
 
 function rotoplas(x, y) {
   push();
-  fill(90);
   translate(x, y);
   rect(0, -17, 15, 3);
   rect(0, 0, 31, 31);
