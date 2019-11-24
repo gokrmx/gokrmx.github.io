@@ -12,6 +12,8 @@ function setup() {
     rectMode(CENTER);
 imageMode(CENTER);
   strokeWeight(0.5);
+   linku = createA('https://broozli.tumblr.com','Moodboard');
+  linko = createA('https://www.instagram.com/gokrmx/','Contacto');
 
 }
 
@@ -22,8 +24,6 @@ function draw() {
   image(img,width/2,80);
   scale(1.2);
   this.escena(width / 100*43, height / 100 * 60);
-   linku = createA('https://broozli.tumblr.com','Moodboard');
-  linko = createA('https://www.instagram.com/gokrmx/','Contacto');
 
 }
 
