@@ -1,0 +1,38 @@
+#vectorSlides { display:none; }
+#bitmapSlides { display:none; }
+
+#closeBtn { display:none; opacity:0; position:absolute; top:70px; left:-50px; font-size:2.5em; font-weight:bold; transition:all 1s ease;}
+
+/* Button Background Images*/
+#vectorbtn { cursor:pointer; position:absolute; top:0vh; left:0vw;background:url("Images/Portfolio/Illustration/vect-03.png") no-repeat center; transition: all 1s ease; background-size:150%; width:34vw; height: 40vh; padding:10vw; }
+
+#bitmapbtn { cursor:pointer; position:absolute; top:0vh; left:40vw; background:url("Images/Portfolio/Illustration/skullboi.png") no-repeat 50% 65%; transition: all 1s ease; background-size:200%; width:34vw; height: 40vh; padding:10vw; }
+
+/* Button text & screen for blending */
+.vecImgBtn { background-color:#FFF0; color:black; padding:0; width:34vw; height: 40vh; font-weight:bold; font-size:5em; text-align:center; display:inline; vertical-align:super; mix-blend-mode:difference; position:absolute; top:0vh; left:0vw; transition:all 0.8s ease; }
+
+.vecImgBtn:hover { background-color:black; color:white; padding-top:30px; mix-blend-mode:difference; }
+
+.bitImgBtn { background-color:#FFF0; color:#FFF0; padding:0; width:34vw; height: 40vh; font-weight:bold; font-size:5em; text-align:center; display:inline; vertical-align:super; mix-blend-mode:screen; position:absolute; top:0vh; left:0vw; transition:all 0.8s ease; }
+
+.bitImgBtn:hover { background-color:#FFFD; color:black; padding-top:30px; mix-blend-mode:screen; }
+
+
+/*
+  #ea2a23 naranja
+  #fec833 amarillo
+*/
+
+@media only screen and (max-width:500px){
+  #closeBtn { position:absolute; top:-15px; left:50vw; font-size:2.8em; font-weight:bold; transition:all 1s ease;}
+  #vectorbtn { position:absolute; top:0vh; left:-5px;width:70vw; height: 30vh; padding:10vw; }
+  #bitmapbtn { position:absolute; top:40vh; left:-5px;width:70vw; height: 30vh; padding:10vw; }
+
+}
+@media only screen and (max-width:750px){
+  #vectorbtn { position:absolute; top:0vh; left:-10px; width:70vw; height: 30vh; padding:10vw; }
+  #bitmapbtn { position:absolute; top:35vh; left:-10px; width:70vw; height: 30vh; padding:10vw; }
+  .vecImgBtn { width:70vw; height: 30vh; padding:10vw; }
+  .bitImgBtn { width:70vw; height: 30vh; padding:10vw; }
+}
+

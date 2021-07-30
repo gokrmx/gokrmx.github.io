@@ -1,0 +1,52 @@
+#Maxpx {
+  width:65vw; height:auto;  opacity:1;
+}
+#MaxpxCont {
+  position:relative; top: 100vh; left:10vw; opacity:1; transition:all 0.8s ease;
+}
+
+#table01{width:38vw; position:absolute; top:-5vh; left:0vw; background-image:linear-gradient(transparent, #eee7); padding:10px; padding-top:0px; mix-blend-mode:normal; scale:0; transition:all 1.5s;}
+
+#table02{width:38vw; position:absolute; top:-5vh; left:45vw; background-image:linear-gradient(transparent, #eee7); padding:10px; padding-top:25px; scale:0; mix-blend-mode:normal; transition:all 1.5s; }
+
+.t02h{font-size:50%; font-weight: 100; text-align:left; color:#999; padding:5px; vertical-align:super; position:relative; bottom: 50px;}
+.t02d1{font-size:70%; font-weight: 120; text-align:left; border-collapse:collapse; padding:0px; vertical-align:super;}
+.t02d2{font-size:70%; font-weight: 800; text-align:right; border-collapse:collapse; padding:5px; vertical-align:super;}
+.t02d3{font-size:70%; font-weight: 400; text-align:left; border-collapse:collapse; padding:0px; vertical-align:super;}
+
+#table03{width:38vw; position:absolute; top:45vh; left:0vw; background-image:linear-gradient(transparent, #eeeb); padding:10px; padding-top:0px; mix-blend-mode:normal; scale:0; vertical-align:right; transition:all 1.5s; }
+
+#table04{width:38vw; position:absolute; top:36vh; left:45vw; background-image:linear-gradient(transparent, #eeeb); padding:10px; padding-top:25px; mix-blend-mode:normal; scale:0; vertical-align:right;transition:all 1.5s;}
+
+.t04h{font-size:50%; font-weight: 100; text-align:left; color:#999; padding:5px; vertical-align:super; position:relative; bottom: 50px;}
+.t04d1{font-size:70%; font-weight: 120; text-align:left; border-collapse:collapse; padding:0px; vertical-align:super;}
+.t04d2{font-size:70%; font-weight: 800; text-align:right; border-collapse:collapse; padding:5px; vertical-align:super;}
+.t04d3{font-size:70%; font-weight: 400; text-align:left; border-collapse:collapse; padding:0px; vertical-align:super;}
+
+h2.boxtitle, h2.boxtitleR {
+  font-size:2.5em;
+  font-weight:900;
+  position:relative;
+  top:7vh;
+  color:#FFF7;
+  -webkit-text-stroke: 2px black;
+}
+h2.boxtitleR {
+  text-align:right;
+}
+
+.tables{  mix-blend-mode:hard-light;  }
+
+@media only screen and (max-width:700px){
+  #table01{width:60vw; position:relative; top:120px; left:0px;}
+  #table02{width:60vw; position:relative; top:120px; left:0px;}
+  #table03{width:60vw; position:relative; top:120px; left:0px;}
+  #table04{width:60vw; position:relative; top:120px; left:0px;}
+
+  .modal{ overflow-y:auto; height:100%; }
+
+  #wrap{ position:absolute; top:-240px; background:url("Images/MAXpxa.png") no-repeat center fixed; background-size:20%;
+}
+
+#maxpxCont{display:none;}
+}

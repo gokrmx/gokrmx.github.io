@@ -1,0 +1,450 @@
+<!DOCTYPE=html>
+<html>
+<head>
+  <title>Max Ríos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mod3.css">
+  <link rel="stylesheet" type="text/css" href="slides.css">
+  <link rel="stylesheet" type="text/css" href="mod5.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot">
+  <script src="script.js" defer></script>
+  <script src="slides.js" defer></script>
+
+  <meta charset="utf-8" />
+  <meta name="keywords" content="design, web, ux/ui, illustration, front-end, dope">
+  <meta name="description" content="Max Ríos CV & portfolio ">
+  <meta name="author" content="Max Ríos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+<body>
+  <div class="blending">
+    <!-- FULLCOVER -->
+    <div id="MAX" class="center1 transformTitle frame">
+      <h1 id="title">MAX</h1>
+    </div>
+
+    <!-- Menu List -->
+    <div id="menu" class="center2">
+      <ul id="ulist">
+
+        <li><button id="wdbtn" class="menubtns">Web Design</button></li>
+
+        <li><button id="mgbtn" class="menubtns">Motion</button></li>
+
+        <li><button id="illbtn" class="menubtns">Illustration</button></li>
+
+        <li><button id="prbtn" class="menubtns">Prints</button></li>
+
+        <li><button id="biobtn" class="menubtns">Bio</button></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Web Design Modal -->
+  <div id="wdModal" class="modal">
+    <div class="modal-content">
+      <div id="sidebar1">
+        <h4 class="modalTitle">WD</h4>
+        <span class="close-btn">&#x2039;</span>
+      </div>
+
+      <div class="grid-container">
+        <div class="row">
+          <div class="col-4 item">
+            <img src="Images/sledgehammer.gif" alt="CHANGE" class="image">
+            <p>Site</p>
+          </div>
+          <div class="col-6 item">
+            <img src="Images/sledgehammer.gif" alt="CHANGE" class="image">
+            <p>Under</p>
+          </div>
+          <div class="col-2 item">
+            <img src="Images/sledgehammer.gif" alt="CHANGE" class="image">
+            <p>Construction.</p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Motion Graphics Modal -->
+  <div id="mgModal" class="modal">
+    <div class="modal-content">
+      <div id="sidebar2">
+        <h4 class="modalTitle">MG</h4>
+        <span class="close-btn">&#x2039;</span>
+      </div>
+
+      <div class="grid-container">
+        <div class="slideshow">
+
+          <!-- Navigation dots -->
+          <div style="text-align:center">
+            <span class="dot2" onclick="currentSlide2(1)"></span>
+            <span class="dot2" onclick="currentSlide2(2)"></span>
+          </div>
+
+          <!-- Actual Content -->
+          <div class="motionSlides fade">
+            <video class="vids" controls>
+              <source src="Images/Portfolio/MotionGraphics/gokrmx_720.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="motionSlides fade">
+              <video class="vids" controls>
+                <source src="Images/Portfolio/MotionGraphics/gokrmx_720.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <!-- Next and Previous buttons -->
+              <a class="prev" onclick="plusSlides2(-1)">&#x25c5;</a>
+              <a class="next" onclick="plusSlides2(1)">&#x25bb;</a>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Illustration Modal -->
+      <div id="illModal" class="modal">
+        <div class="modal-content">
+          <div id="sidebar3">
+            <h4 class="modalTitle">ILL</h4>
+            <span class="close-btn">&#x2039;</span>
+          </div>
+
+          <div class="grid-container">
+
+            <!-- vector button -->
+            <div id="vectorbtn">
+              <div class="vecImgBtn">
+                <a style="">vector</a>
+              </div>
+            </div>
+
+            <!-- bitmap button -->
+            <div id="bitmapbtn">
+              <div class="bitImgBtn">
+                <a>bitmap</a>
+              </div>
+            </div>
+
+            <!-- Close button -->
+            <div id="closeBtn">
+              <span>&#x2205;</span>
+            </div>
+
+            <!-- Vector Slideshow begin-->
+            <div id="vectorSlides">
+              <div class="slideshow">
+                <!-- Navigation dots -->
+                <div style="text-align:center">
+                  <span class="dot3" onclick="currentSlide3(1)"></span>
+                  <span class="dot3" onclick="currentSlide3(2)"></span>
+                  <span class="dot3" onclick="currentSlide3(3)"></span>
+                  <span class="dot3" onclick="currentSlide3(4)"></span>
+                  <span class="dot3" onclick="currentSlide3(5)"></span>
+                </div>
+                <!-- Actual Content -->
+                <div class="illSlides fade">
+                  <img src="Images/Portfolio/Illustration/vect-01.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlides fade">
+                  <img src="Images/Portfolio/Illustration/vect-02.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlides fade">
+                  <img src="Images/Portfolio/Illustration/vect-03.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlides fade">
+                  <img src="Images/Portfolio/Illustration/vect-04.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlides fade">
+                  <img src="Images/Portfolio/Illustration/vect-05.png" alt="change.png" class="prints">
+                </div>
+                <!-- Next and Previous buttons -->
+                <a class="prev" onclick="plusSlides3(-1)">&#x25c5;</a>
+                <a class="next" onclick="plusSlides3(1)">&#x25bb;</a>
+              </div><!-- .slideshow end -->
+            </div> <!-- #vectorSlides end -->
+
+            <!-- Bitmap Slideshow begin-->
+            <div id="bitmapSlides">
+              <div class="slideshow">
+                <!-- Navigation dots -->
+                <div style="text-align:center">
+                  <span class="dot3b" onclick="currentSlide3b(1)"></span>
+                  <span class="dot3b" onclick="currentSlide3b(2)"></span>
+                  <span class="dot3b" onclick="currentSlide3b(3)"></span>
+                </div>
+                <!-- Actual Content -->
+                <div class="illSlidesB fade">
+                  <img src="Images/Portfolio/Illustration/cerbero.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlidesB fade">
+                  <img src="Images/Portfolio/Illustration/kitkat.png" alt="change.png" class="prints">
+                </div>
+                <div class="illSlidesB fade">
+                  <img src="Images/Portfolio/Illustration/CaimanM.png" alt="change.png" class="prints">
+                </div>
+                <!-- Next and Previous buttons -->
+                <a class="prev" onclick="plusSlides3b(-1)">&#x25c5;</a>
+                <a class="next" onclick="plusSlides3b(1)">&#x25bb;</a>
+              </div><!-- .slideshow end -->
+            </div> <!-- #bitmapSlides end -->
+
+            <!-- Script -->
+          </div> <!-- .grid-container end -->
+
+
+        </div>
+      </div>
+
+      <!-- Print Modal -->
+      <div id="prModal" class="modal">
+        <div class="modal-content">
+          <div id="sidebar4">
+            <h4 class="modalTitle">INK</h4>
+            <span class="close-btn">&#x2039;</span>
+          </div>
+
+          <div class="grid-container">
+            <div class="slideshow">
+
+              <!-- Navigation dots -->
+              <div style="text-align:center">
+                <span class="dot4" onclick="currentSlide4(1)"></span>
+                <span class="dot4" onclick="currentSlide4(2)"></span>
+                <span class="dot4" onclick="currentSlide4(3)"></span>
+                <span class="dot4" onclick="currentSlide4(4)"></span>
+                <span class="dot4" onclick="currentSlide4(5)"></span>
+              </div>
+
+              <!-- Actual Content -->
+              <div class="printSlides fade">
+                <img src="Images/Portfolio/Print/1.png" alt="skullboi.png" class="prints">
+              </div>
+              <div class="printSlides fade">
+                <img src="Images/Portfolio/Print/2.png" alt="youngMaster.png" class="prints">
+              </div>
+              <div class="printSlides fade">
+                <img src="Images/Portfolio/Print/3.png" alt="Astros.png" class="prints">
+              </div>
+              <div class="printSlides fade">
+                <img src="Images/Portfolio/Print/4.png" alt="Ancest.png" class="prints">
+              </div>
+              <div class="printSlides fade">
+                <img src="Images/Portfolio/Print/5.png" alt="BaybLatex.png" class="prints">
+              </div>
+
+              <!-- Next and Previous buttons -->
+              <a class="prev" onclick="plusSlides4(-1)">&#x25c5;</a>
+              <a class="next" onclick="plusSlides4(1)">&#x25bb;</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Modal -->
+    <div id="bioModal" class="modal">
+      <div class="modal-content">
+        <div id="sidebar5">
+          <h4 class="modalTitle">01.</h4>
+          <span class="close-btn">&#x2039;</span>
+        </div>
+        <div class="grid-container">
+          <div id="MaxpxCont">
+            <img id="Maxpx" src="Images/MAXpxa.png" alt="PixelMax">
+          </div>
+          <div id="wrap">
+
+            <div id="table01" class="tables">
+              <h2 class="boxtitle">My Name Is</h2>
+              <p style="font-size:32px; font-weight:normal; position:relative; top:16px;">
+                &#x2042;  &#x270C;  &#x276e;
+                &#x2039;  &#x2205;  &#x2234;
+                &#x2299;  &#x2708;  &#x2731;
+                &#x262f;  &#x2638;  &#x269c;
+              </p>
+            </div>
+
+            <div id="table02" class="tables">
+              <h2 class="boxtitleR" >EXPERIENCE</h2>
+              <table>
+                <tr>
+                  <th class="t02h">When</th>
+                  <th class="t02h" style="text-align:right">Area</th>
+                  <th class="t02h">Where</th>
+                </tr>
+                <tr>
+                  <td class="t02d1">2021</td>
+                  <td class="t02d2">UI/UX</td>
+                  <td class="t02d3">Praxis (social platform) development</td>
+                </tr>
+                <tr>
+                  <td class="t02d1">2021</td>
+                  <td class="t02d2">Art & Illustration</td>
+                  <td class="t02d3">Año Nuevo (independent film)</td>
+                </tr>
+                <tr>
+                  <td class="t02d1">2020</td>
+                  <td class="t02d2">Graphic Design</td>
+                  <td class="t02d3">Siempre 7 Publicidad (publicity)</td>
+                </tr>
+                <tr>
+                  <td class="t02d1">2019</td>
+                  <td class="t02d2">Video Edition</td>
+                  <td class="t02d3">LAA (art museum)</td>
+                </tr>
+                <tr>
+                  <td class="t02d1">17-21</td>
+                  <td class="t02d2">Freelance</td>
+                  <td class="t02d3">(all over)</td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="table03" class="tables">
+              <h2 class="boxtitle">TOOLBOX</h2>
+              <table style="position:relative; left:20%">
+                <tr>
+                  <td>
+                    <table style="width:100%; margin:4px; font-size:70%;">
+                      <tr style="vertical-align:super;">
+                        <td style="text-align:right"><b>Graphic</b>:</td>
+                        <td>Illustrator, Photoshop, InDesign</td>
+                      </tr>
+                      <tr style="vertical-align:super;">
+                        <td style="text-align:right"><b>Video</b>:</td>
+                        <td>After Effects</td>
+                      </tr>
+                      <tr style="vertical-align:super;">
+                        <td style="text-align:right"><b>Audio</b>:</td>
+                        <td>Audacity, Live, Pure Data</td>
+                      </tr>
+                      <tr style="vertical-align:super;">
+                       <td style="text-align:right"><b>Code</b>:</td>
+                       <td>Processing, HTML, CSS, JS, Python</td>
+                     </tr>
+                   </table>
+                 </td>
+               </tr>
+             </table>
+           </div>
+
+           <div id="table04" class="tables">
+            <h2 class="boxtitleR">EDUCATION</h2>
+            <table>
+              <tr>
+                <th class="t04h">When</th>
+                <th class="t04h" style="text-align:right">What</th>
+                <th class="t04h">Where</th>
+              </tr>
+              <tr>
+                <td class="t04d1">15-19</td>
+                <td class="t04d2">Licenciatura en Diseño</td>
+                <td class="t04d3">EDINBA</td>
+              </tr>
+              <tr>
+                <td class="t04d1">2021</td>
+                <td class="t04d2">Paper & Textile Screenprinting</td>
+                <td class="t04d3">Taller 75 grados</td>
+              </tr>
+              <tr>
+                <td class="t04d1">2019</td>
+                <td class="t04d2">Socio-Cultural Projects Design</td>
+                <td class="t04d3">CENART</td>
+              </tr>
+              <tr>
+                <td class="t04d1">2019</td>
+                <td class="t04d2">Creative Coding</td>
+                <td class="t04d3">Centro Cultura Digital</td>
+              </tr>
+              <tr>
+                <td class="t04d1">2018</td>
+                <td class="t04d2">Cinematographic Literacy</td>
+                <td class="t04d3">Cineteca Nacional</td>
+              </tr>
+            </table>
+          </div>
+
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+Reaally Cool HTML Symbols
+  &#x2042;  ASTERISM
+  &#x270C;  VICTORY HAND
+  &#x276e;  HEAVY LEFT-POINTING ANGLE
+  &#x2039;  The one I'm using
+  &#x2205;  EMPTY SET
+  &#x2234;  THEREFORE
+  &#x2299;  CIRCLED DOT OPERATOR (SUN)
+  &#x2708;  AIRPLANE
+  &#x2731;  HEAVY ASTERISK
+  &#x262f;  YIN TANG
+  &#x2638;  WHEEL OF DHARMA
+  &#x269c;  FLEUR-DE-LIS
+-->
+
+<!-- Bottom Bar -->
+<table id="bottomBar" class="center3">
+  <tr>
+    <td style="width:25%; font-size:2em; text-align:left">
+      &#x270C;
+    </td>
+    <td style="width:50%">
+      <div id="social">
+        <a id="tumblr" href="https://broozli.tumblr.com" title="Moodboard" target="_blank">
+          <img class="icon" src="Images/Social/BR_Tumblr.png" alt="tumblr">
+        </a>
+
+        <a id="insta" href="https://www.instagram.com/gokrmx/" title="Prints & Social" target="_blank">
+          <img class="icon" src="Images/Social/BS_Insta.png" alt="instagram">
+        </a>
+
+        <a id="github" href="https://github.com/gokrmx" title="Github" target="_blank">
+          <img class="icon" src="Images/Social/githubB.png" alt="github">
+        </a>
+
+        <a id="soundcloud" href="https://soundcloud.com/gokrmx/tracks" title="soundcloud" target="_blank">
+          <img class="icon" src="Images/Social/scB.png" alt="soundcloud">
+        </a>
+
+        <a id="behance" href="https://soundcloud.com/gokrmx" title="behance" target="_blank">
+          <img class="icon" src="Images/Social/behancheB.png" alt="behance">
+        </a>
+
+      </div>
+    </td>
+
+    <td style="width:25%; text-align:right;">
+      <div id="email">
+        gokrmx@gmail.com
+      </div>
+    </td>
+
+  </tr>
+</table>
+
+
+</body>
+</html>
