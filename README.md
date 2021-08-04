@@ -1,6 +1,9 @@
 # gokrmx.github.io
 Landing Page para Max Ríos
 
+Siguientes pasos:
+_arreglar bugs para visualización navegador safari y chrome.
+
 Busco crear una página web sencilla e interactiva con html, css y js
 
 objetivos personales:
@@ -12,5 +15,3 @@ _acceder con facilidad a los rubros
 _entretenerse 
 _descubrir
 
-Siguientes pasos:
-_arreglar bugs para visualización navegador safari y chrome
