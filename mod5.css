@@ -1,6 +1,14 @@
-.button { position:relative; top:0px; background-color:#bbbf; border:none; color:white; padding:12px 22px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; margin:2px; cursor: pointer; transition:all 1s ease; }
-.button:hover{background-color:#bbb1; color:black; top:-8px; transition:all 1s ease;}
+.button { position:relative; top:0px; background-color:#32ff; border-style:outset; border-radius:30px; color:white; text-shadow:none; padding: 15px; text-align:center; font-weight:bold; text-decoration:none; display:inline-block; font-size:20px; margin:2px; cursor: pointer; transition:all 1s ease; animation:boton 0.5s infinite; }
+.button:hover{background-color:#aaa1; color:#32ff; text-shadow:0 0 25px white; top:-5px; animation:none;}
 /* botón link para ir a CV */
+
+@keyframes boton {
+  0% { scale:1.5; }
+  5% { scale:0.5; color:white; }
+  10% { scale:1.2; }
+  100% { scale:1.0; }
+  }
+}
 
 #Maxpx {
   width:65vw; height:auto;  opacity:1;
