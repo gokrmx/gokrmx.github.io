@@ -16,7 +16,9 @@ ulist.addEventListener("mouseout", function( event ) {
 var title = document.getElementById("MAX");
 var bott = document.getElementById("bottomBar");
 var social = document.getElementById("social");
-var email = document.getElementById("email");
+var credits = document.getElementById("credits");
+var luckyB = document.getElementById("luckyB");
+var luckyW = document.getElementById("luckyW");
 
 // Web Design
 var modal1 = document.getElementById("wdModal");
@@ -32,7 +34,9 @@ btn1.onclick = function() {
   bott.style.color = "white";
   menu.style.opacity = "0";
   social.style.opacity = "0";
-  email.style.opacity = "0";
+  credits.style.opacity = "0";
+  luckyB.style.opacity = "0";
+  luckyW.style.opacity = "1";
 }
 
 span1.onmousedown = function() {
@@ -53,8 +57,10 @@ span1.onclick = function() {
   bott.style.color = "black";
   menu.style.opacity = "1";
   social.style.opacity = "1";
-  email.style.opacity = "1";
+  credits.style.opacity = "1";
   modal1.style.opacity = "0";
+  luckyB.style.opacity = "1";
+  luckyW.style.opacity = "0";
   setTimeout(function(){
     modal1.style.display = "none";
   }, 1000);
@@ -74,7 +80,9 @@ btn2.onclick = function() {
   bott.style.color = "white";
   menu.style.opacity = "0";
   social.style.opacity = "0";
-  email.style.opacity = "0";
+  credits.style.opacity = "0";
+  luckyB.style.opacity = "0";
+  luckyW.style.opacity = "1";
 }
 
 span2.onmousedown = function() {
@@ -95,8 +103,10 @@ span2.onclick = function() {
   bott.style.color = "black";
   menu.style.opacity = "1";
   social.style.opacity = "1";
-  email.style.opacity = "1";
+  credits.style.opacity = "1";
   modal2.style.opacity = "0";
+  luckyB.style.opacity = "1";
+  luckyW.style.opacity = "0";
   setTimeout(function(){
     modal2.style.display = "none";
   }, 1000);
@@ -116,7 +126,9 @@ btn3.onclick = function() {
   bott.style.color = "white";
   menu.style.opacity = "0";
   social.style.opacity = "0";
-  email.style.opacity = "0";
+  credits.style.opacity = "0";
+  luckyB.style.opacity = "0";
+  luckyW.style.opacity = "1";
 }
 
 span3.onmousedown = function() {
@@ -137,8 +149,10 @@ span3.onclick = function() {
   bott.style.color = "black";
   menu.style.opacity = "1";
   social.style.opacity = "1";
-  email.style.opacity = "1";
+  credits.style.opacity = "1";
   modal3.style.opacity = "0";
+  luckyB.style.opacity = "1";
+  luckyW.style.opacity = "0";
   setTimeout(function(){
     modal3.style.display = "none";
   }, 1000);
@@ -168,7 +182,9 @@ btn4.onclick = function() {
   bott.style.color = "white";
   menu.style.opacity = "0";
   social.style.opacity = "0";
-  email.style.opacity = "0";
+  credits.style.opacity = "0";
+  luckyB.style.opacity = "0";
+  luckyW.style.opacity = "1";
 }
 
 span4.onmousedown = function() {
@@ -189,8 +205,10 @@ span4.onclick = function() {
   bott.style.color = "black";
   menu.style.opacity = "1";
   social.style.opacity = "1";
-  email.style.opacity = "1";
+  credits.style.opacity = "1";
   modal4.style.opacity = "0";
+  luckyB.style.opacity = "1";
+  luckyW.style.opacity = "0";
   setTimeout(function(){
     modal4.style.display = "none";
   }, 1000);
@@ -218,16 +236,18 @@ btn5.onclick = function() {
   bott.style.color = "white";
   menu.style.opacity = "0";
   social.style.opacity = "0";
-  email.style.opacity = "0";
+  credits.style.opacity = "0";
+  luckyB.style.opacity = "0";
+  luckyW.style.opacity = "1";
   setTimeout(function(){
     maxpx.style.top = "0vh";
     maxpx.style.opacity = "1";
   },150);
   setTimeout(function(){
     tab1.style.scale = "1";
-    tab2.style.scale = "1";
+    /*tab2.style.scale = "1";
     tab3.style.scale = "1";
-    tab4.style.scale = "1";
+    tab4.style.scale = "1";*/
   },500);
 }
 
@@ -250,18 +270,45 @@ span5.onclick = function() {
   bott.style.color = "black";
   menu.style.opacity = "1";
   social.style.opacity = "1";
-  email.style.opacity = "1";
+  credits.style.opacity = "1";
   modal5.style.opacity = "0";
-  maxpx.style.top = "100vh";
+  luckyB.style.opacity = "1";
+  luckyW.style.opacity = "0";
+  //maxpx.style.top = "100vh";
   tab1.style.scale = "0";
-  tab2.style.scale = "0";
+  /*tab2.style.scale = "0";
   tab3.style.scale = "0";
-  tab4.style.scale = "0";
+  tab4.style.scale = "0";*/
   setTimeout(function(){
     modal5.style.display = "none";
     maxpx.style.opacity = "0";
-  }, 1000);
+  },1000);
+
 }
 
 let viewportHeight = window.innerHeight;
 let viewportWidth = window.innerWidth;
+
+
+function copiarFon() {
+  var copyText = document.getElementById("WAPP");
+
+  copyText.select();
+  copyText.setSelectionRange(0,99999);
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Número copiado");
+}
+
+
+function copiarMail() {
+  var copyText = document.getElementById("MAIL");
+
+  copyText.select();
+  copyText.setSelectionRange(0,99999);
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Correo copiado");
+}
