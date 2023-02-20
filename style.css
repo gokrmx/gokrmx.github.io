@@ -2,7 +2,8 @@
 
 html { overflow:hidden; }
 
-body { font-family:'Roboto', sans-serif; background-color:white; height:100%; overflow: hidden;
+body { font-family:'Roboto', sans-serif; background-color:white; height:100%;
+    overflow: hidden;
     position: relative;
     margin: 0;
     padding: 0;}
@@ -28,7 +29,9 @@ body { font-family:'Roboto', sans-serif; background-color:white; height:100%; ov
 }
 
 
-.lucky { position:absolute; top:0px; height:25px; width:auto; transition:opacity 1s ease;}
+
+
+.lucky { position:relative; top:0px; height:25px; width:auto; transition:opacity 1s ease;}
 
 .icon{ width:auto; height:25px; padding:5px; display:inline; }
 #social{ opacity:1; transition:opacity 1s ease; }
@@ -174,9 +177,10 @@ h4.modalTitle {
   display: block;
 }
 
+
+
 @media only screen and (max-width:764px){
   [class*="col-"] {
     width:100%;
   }
 }
-
