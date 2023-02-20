@@ -46,6 +46,12 @@ body { font-family:'Roboto', sans-serif; background-color:white; height:100%;
 
 #credits { opacity:1; transition:opacity 1s ease; }
 
+.creditButton { position:relative; font-size:12px; background-color:#0000; color:#0000; border:none; padding:2px 10px; text-align:center; text-decoration:none; display:inline-block; cursor:pointer; transition:all 0.5s ease; animation:credito 4s infinite;}
+.creditButton:hover { background-color:#000f; color:#ffff; animation:none;}
+@keyframes credito { 0%{background-color:#000f;} 1%{background-color:#0000;} 2%{background-color:#000f;} 3%{background-color:#0000;} 4%{background-color:#000f;} 5%{background-color:#0000;} 6%{background-color:#000f;} 7%{background-color:#0000;}}
+
+
+
 .center1 { position:relative; top:0%; left:50%; margin-right:-50%; transform: translate(-50%, -20%); }
 .center2 { position:absolute; top:70%; left:50%; margin-right:-50%; transform: translate(-50%, -70%); }
 .center3 { position:absolute;  left:50%; margin-right:-50%; transform: translate(-50%, 0%); }
