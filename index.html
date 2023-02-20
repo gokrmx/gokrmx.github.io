@@ -1,7 +1,7 @@
 <!DOCTYPE=html>
 <html>
 <head>
-  
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECZ8TVP58Y"></script>
 <script>
@@ -285,18 +285,22 @@
           <div id="wrap">
 
             <div id="table01" class="tables">
-              <h2 class="boxtitle">My Name Is</h2>
+              <h2 class="boxtitle">Mi nombre es</h2>
               <p style="font-size:16px; font-weight:normal; position:relative; top:16px;">
-                Andrés Maximiliano Ríos Bricio, I’m an inquirer, an observer, thinker, creator & designer from Mexico City, currently freelancing with people all around the globe.
+                Andrés Maximiliano Ríos Bricio.<br>
+                Todo el mundo me dice <strong>Max</strong>.<br>
+                Soy un creador en la Ciudad de México.<br>
+                Soy observador, empático y organizado.<br>
+                Me destaco por mi capacidad de <b>adaptación</b>.<br>
+                Me encanta aprender cosas nuevas.
               </p>
-              <p style="font-size:24px;">
-                &#x2042;  &#x270C;  &#x276e;
-                &#x2039;  &#x2205;  &#x2234;
-                &#x2299;  &#x2708;  &#x2731;
-                &#x262f;  &#x2638; 
+              <p style="font-size:32px;">
+                &#x270C;
               </p>
+              <a href="Images/CV_Max_DiseñoGrafico_23.pdf" download><p>CV</p></a>
             </div>
 
+<!--
             <div id="table02" class="tables">
               <h2 class="boxtitleR" >EXPERIENCE</h2>
               <table>
@@ -396,6 +400,7 @@
               </tr>
             </table>
           </div>
+        -->
 
           <br><br><br><br>
         </div>
@@ -423,10 +428,14 @@ Reaally Cool HTML Symbols
 <table id="bottomBar" class="center3">
   <tr>
     <td style="width:25%; font-size:2em; text-align:left">
-      &#x270C;
+      <!--&#x270C;-->
+      <img id="luckyB" class="lucky" style="opacity:1" src="Images/luckyB.png" alt="sup">
+      <img id="luckyW" class="lucky" style="opacity:0" src="Images/luckyW.png" alt="sup">
     </td>
+
     <td style="width:50%">
       <div id="social">
+        <!--
         <a id="tumblr" href="https://broozli.tumblr.com" title="Moodboard" target="_blank">
           <img class="icon" src="Images/Social/BR_Tumblr.png" alt="tumblr">
         </a>
@@ -441,14 +450,27 @@ Reaally Cool HTML Symbols
 
         <a id="soundcloud" href="https://soundcloud.com/gokrmx/tracks" title="soundcloud" target="_blank">
           <img class="icon" src="Images/Social/scB.png" alt="soundcloud">
-        </a>
+        </a> -->
+
+        <input type="text" value="5539025095" id="WAPP" style="display:none" >
+        <button onclick="copiarFon()" id="whatsapp" style="">
+          <img class="icon" src="Images/Social/whatsapp.png" alt="Whatsapp">
+          <span class="tooltip">Copiar número</span>
+        </button>
+
+        <input type="text" value="gokrmx@gmail.com" id="MAIL" style="display:none" >
+        <button onclick="copiarMail()" id="correo" style="">
+          <img class="icon" src="Images/Social/mail.png" alt="Mail">
+          <span class="tooltip">Copiar correo</span>
+        </button>
 
       </div>
     </td>
 
     <td style="width:25%; text-align:right;">
-      <div id="email">
-        gokrmx@gmail.com
+      <div id="credits">
+        <p style="font-size:12px;">
+        Design & build by: Max</p>
       </div>
     </td>
 
