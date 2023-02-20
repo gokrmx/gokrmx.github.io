@@ -1,6 +1,11 @@
 * { box-sizing:border-box; }
 
-body { font-family:'Roboto', sans-serif; background-color:white; height:100%; overflow:hidden; }
+html { overflow:hidden; }
+
+body { font-family:'Roboto', sans-serif; background-color:white; height:100%; overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;}
 /* display:flex; flex-direction:column; align-items:center; */
 
 #MAX { position:relative; top:-5vh; padding:0px; mix-blend-mode:difference; }
