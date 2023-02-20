@@ -17,7 +17,7 @@
   position:relative; top: 100vh; left:15vw; opacity:1; transition:all 0.8s ease;
 }
 
-#table01{width:100vw; position:absolute; top:-5vh; left:0vw; background-image:linear-gradient(#ffff, transparent); padding:10px; padding-top:0px; mix-blend-mode:normal; scale:0; transition:all 1.5s;}
+#table01{width:100vw; position:absolute; top:-10vh; left:0vw; background-image:linear-gradient(#ffff, transparent); padding:10px; padding-top:0px; mix-blend-mode:normal; scale:0; transition:all 1.5s;}
 
 #table02{width:38vw; position:absolute; top:-5vh; left:45vw; background-image:linear-gradient(transparent, #eee7); padding:10px; padding-top:25px; scale:0; mix-blend-mode:normal; transition:all 1.5s; }
 
