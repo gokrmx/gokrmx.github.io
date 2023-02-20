@@ -110,7 +110,13 @@ h4.modalTitle {
   left:70px;
   font-size:100px;
   font-weight:900;
+  opacity:1;
+  animation:fadeClose 5s infinite;
 }
+@keyframes fadeClose { 0%{opacity:1} 1%{opacity:0} 2%{opacity:1;} 3%{opacity:0} 4%{opacity:1} 5%{opacity:0} 6%{opacity:1} 100%{opacity:1;}}
+
+.goBack { position:relative; top:-70px; left:-10px; opacity:0; animation:fadeGoBack 10s infinite;}
+@keyframes fadeGoBack { 0%{opacity:0; left:10px;} 3%{opacity:1; left:-10px;} 33%{opacity:0;} }
 
 
 #wdModal { transition:opacity 1s ease; }
