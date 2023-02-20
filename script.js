@@ -7,6 +7,14 @@ function preventMotion(event)
     event.preventDefault();
     event.stopPropagation();
 }
+/*
+Lo anterior, junto con html{overflow:hidden;} y
+body{overflow:hidden;position:relative;} en style.css yyy
+<meta name="viewport" content="user-scalable=no" >
+evita que la página ande bailando en dispositivos móviles,
+según también para que no se pueda hacer zoom.
+Lo saqué de stack overflow: Disable scrolling in all mobile devices
+*/
 
 var menu = document.getElementById("menu");
 var ulist = document.getElementById("ulist");
@@ -14,10 +22,12 @@ var ulist = document.getElementById("ulist");
 ulist.addEventListener("mouseover", function( event ) {
   event.target.style.color = "#0020dd"; // #fec833 amarillo
   event.target.style.cursor = "pointer";
+  event.target.style.textShadow = "1px 1px 1px white";
   event.target.style.transform = "translateY(-5px)";
 }, false);
 ulist.addEventListener("mouseout", function( event ) {
   event.target.style.color = "white";
+  event.target.style.textShadow = "none";
   event.target.style.transform = "translateY(0px)";
 }, false);
 
@@ -47,6 +57,7 @@ btn1.onclick = function() {
   credits.style.opacity = "0";
   luckyB.style.opacity = "0";
   luckyW.style.opacity = "1";
+
 }
 
 span1.onmousedown = function() {
