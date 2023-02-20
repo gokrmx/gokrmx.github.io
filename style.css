@@ -23,10 +23,20 @@ body { font-family:'Roboto', sans-serif; background-color:white; height:100%; ov
 }
 
 
-.icon{ width:25px; height:25px; padding:5px; display:inline;}
+.lucky { position:absolute; top:0px; height:25px; width:auto; transition:opacity 1s ease;}
+
+.icon{ width:auto; height:25px; padding:5px; display:inline; }
 #social{ opacity:1; transition:opacity 1s ease; }
 
-#email { opacity:1; transition:opacity 1s ease; }
+.tooltip { visibility:hidden; width:120px; background-color:black; color:#fff; text-align:center; padding:5px; position:absolute; top:-20px; left:35vw; z-index:1; }
+#whatsapp { background-color:#0000; border:none; }
+#whatsapp:hover .tooltip { visibility:visible;}
+#correo { background-color:#0000; border:none; }
+#correo:hover .tooltip { visibility:visible;}
+
+
+
+#credits { opacity:1; transition:opacity 1s ease; }
 
 .center1 { position:relative; top:0%; left:50%; margin-right:-50%; transform: translate(-50%, -20%); }
 .center2 { position:absolute; top:70%; left:50%; margin-right:-50%; transform: translate(-50%, -70%); }
